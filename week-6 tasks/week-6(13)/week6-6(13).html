@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Breadcrumb Navigation</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f4f4f9;
+      padding: 20px;
+    }
+
+    .breadcrumb {
+      display: flex;
+      align-items: center;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      font-size: 16px;
+    }
+
+    .breadcrumb li {
+      margin-right: 10px;
+    }
+
+    .breadcrumb a {
+      text-decoration: none;
+      color: #007bff;
+    }
+
+    .breadcrumb a:hover {
+      text-decoration: underline;
+    }
+
+    .breadcrumb .separator {
+      margin-right: 10px;
+      color: #6c757d;
+    }
+  </style>
+</head>
+<body>
+  <nav aria-label="Breadcrumb">
+    <ul class="breadcrumb">
+      <li><a href="#">Home</a></li>
+      <li class="separator">&gt;</li>
+      <li><a href="#">Category</a></li>
+      <li class="separator">&gt;</li>
+      <li><a href="#">Subcategory</a></li>
+      <li class="separator">&gt;</li>
+      <li>Current Page</li>
+    </ul>
+  </nav>
+</body>
+</html>

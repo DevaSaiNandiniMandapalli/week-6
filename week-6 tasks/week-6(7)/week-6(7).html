@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing Table</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f4f4f9;
+      padding: 20px;
+    }
+
+    .pricing-table {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      max-width: 1000px;
+    }
+
+    .plan {
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      width: 30%;
+      padding: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .plan:hover {
+      transform: translateY(-10px);
+    }
+
+    .plan h2 {
+      font-size: 24px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .plan p {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    .price {
+      font-size: 32px;
+      color: #007bff;
+      margin-bottom: 20px;
+    }
+
+    .features {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 20px;
+    }
+
+    .features li {
+      margin-bottom: 10px;
+    }
+
+    .button {
+      background-color: #007bff;
+      color: #ffffff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #0056b3;
+    }
+    .basic-plan .price {
+      color: #28a745;
+    }
+
+    .standard-plan .price {
+      color: #ffc107;
+    }
+
+    .premium-plan .price {
+      color: #dc3545;
+    }
+  </style>
+</head>
+<body>
+  <div class="pricing-table">
+    <div class="plan basic-plan">
+      <h2>Basic</h2>
+      <p>Great for individuals</p>
+      <div class="price">$9.99/month</div>
+      <ul class="features">
+        <li>Feature 1</li>
+        <li>Feature 2</li>
+        <li>Feature 3</li>
+      </ul>
+      <button class="button">Sign Up</button>
+    </div>
+    <div class="plan standard-plan">
+      <h2>Standard</h2>
+      <p>Perfect for small teams</p>
+      <div class="price">$29.99/month</div>
+      <ul class="features">
+        <li>Feature 1</li>
+        <li>Feature 2</li>
+        <li>Feature 3</li>
+        <li>Feature 4</li>
+      </ul>
+      <button class="button">Sign Up</button>
+    </div>
+    <div class="plan premium-plan">
+      <h2>Premium</h2>
+      <p>Ideal for enterprises</p>
+      <div class="price">$49.99/month</div>
+      <ul class="features">
+        <li>Feature 1</li>
+        <li>Feature 2</li>
+        <li>Feature 3</li>
+        <li>Feature 4</li>
+        <li>Feature 5</li>
+      </ul>
+      <button class="button">Sign Up</button>
+    </div>
+  </div>
+</body>
+</html>

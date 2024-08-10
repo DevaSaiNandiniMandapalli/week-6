@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tags/Labels</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f4f4f9;
+      padding: 20px;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 8px 12px;
+      margin: 5px;
+      border-radius: 12px;
+      font-size: 14px;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .tag.blue {
+      background-color: #007bff;
+    }
+
+    .tag.green {
+      background-color: #28a745;
+    }
+
+    .tag.red {
+      background-color: #dc3545;
+    }
+
+    .tag.orange {
+      background-color: #fd7e14;
+    }
+
+    .tag.purple {
+      background-color: #6f42c1;
+    }
+  </style>
+</head>
+<body>
+  <a href="#" class="tag blue">Technology</a>
+  <a href="#" class="tag green">Health</a>
+  <a href="#" class="tag red">Finance</a>
+  <a href="#" class="tag orange">Travel</a>
+  <a href="#" class="tag purple">Education</a>
+</body>
+</html>

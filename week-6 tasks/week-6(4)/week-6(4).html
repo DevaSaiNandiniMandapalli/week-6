@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Card</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f8f9fa;
+    }
+
+    .product-card {
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .product-card-content {
+      padding: 15px;
+    }
+
+    .product-name {
+      font-size: 18px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .product-price {
+      font-size: 16px;
+      color: #777;
+      margin-bottom: 15px;
+    }
+
+    .product-card button {
+      background-color: #007bff;
+      color: #ffffff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .product-card button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="product-card">
+    <img src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1708673124/Croma%20Assets/Communication/Mobiles/Images/300776_0_et1qto.png?tr=w-360" alt="Product Image">
+    <div class="product-card-content">
+      <h3 class="product-name">IOS Product</h3>
+      <p class="product-price">$883.74</p>
+      <button>Add to Cart</button>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Input with Tooltips</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f4f4f9;
+      padding: 20px;
+    }
+
+    .form-container {
+      max-width: 400px;
+      width: 100%;
+    }
+
+    .form-group {
+      position: relative;
+      margin-bottom: 20px;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+
+    .tooltip {
+      position: absolute;
+      top: 100%; 
+      left: 0;
+      transform: translateY(8px); 
+      background-color: #333;
+      color: #fff;
+      padding: 8px;
+      border-radius: 4px;
+      font-size: 14px;
+      white-space: nowrap;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      visibility: hidden; 
+    }
+
+    .form-group:hover .tooltip,
+    .form-group:focus-within .tooltip {
+      opacity: 1;
+      visibility: visible; 
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <div class="form-group">
+      <input type="text" placeholder="Enter your name" aria-describedby="name-tooltip">
+      <div id="name-tooltip" class="tooltip">Please enter your full name.</div>
+    </div>
+
+    <div class="form-group">
+      <input type="email" placeholder="Enter your email" aria-describedby="email-tooltip">
+      <div id="email-tooltip" class="tooltip">Your email will not be shared.</div>
+    </div>
+
+    <div class="form-group">
+      <input type="password" placeholder="Enter your password" aria-describedby="password-tooltip">
+      <div id="password-tooltip" class="tooltip">Use at least 8 characters, including a number.</div>
+    </div>
+  </div>
+</body>
+</html>

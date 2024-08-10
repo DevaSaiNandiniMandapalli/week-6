@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social Media Icons</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f4f4f9;
+    }
+
+    .footer {
+      text-align: center;
+    }
+
+    .social-icons {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 15px; 
+    }
+
+    .social-icons li {
+      display: inline;
+    }
+
+    .social-icons a {
+      text-decoration: none;
+    }
+
+    .social-icons img {
+      width: 40px; 
+      height: 40px;
+      transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    .social-icons img:hover {
+      transform: scale(1.1); 
+      filter: brightness(0.8); 
+    }
+  </style>
+</head>
+<body>
+  <div class="footer">
+    <ul class="social-icons">
+      <li><a href="https://facebook.com" target="_blank" aria-label="Facebook"><img src="https://via.placeholder.com/40/3b5998/ffffff?text=F" alt="Facebook"></a></li>
+      <li><a href="https://twitter.com" target="_blank" aria-label="Twitter"><img src="https://via.placeholder.com/40/1da1f2/ffffff?text=T" alt="Twitter"></a></li>
+      <li><a href="https://instagram.com" target="_blank" aria-label="Instagram"><img src="https://via.placeholder.com/40/e4405f/ffffff?text=I" alt="Instagram"></a></li>
+      <li><a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><img src="https://via.placeholder.com/40/0077b5/ffffff?text=L" alt="LinkedIn"></a></li>
+    </ul>
+  </div>
+</body>
+</html>

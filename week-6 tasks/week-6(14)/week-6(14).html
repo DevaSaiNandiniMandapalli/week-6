@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagination Controls</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f4f4f9;
+      padding: 20px;
+    }
+
+    .pagination {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .pagination li {
+      margin: 0 5px;
+    }
+
+    .pagination a {
+      display: block;
+      text-decoration: none;
+      color: #007bff;
+      padding: 10px 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .pagination a:hover {
+      background-color: #e9ecef;
+      color: #0056b3;
+    }
+
+    .pagination .active a {
+      background-color: #007bff;
+      color: white;
+      border-color: #007bff;
+    }
+
+    .pagination .disabled a {
+      color: #6c757d;
+      border-color: #ddd;
+      cursor: not-allowed;
+    }
+
+    .pagination .disabled a:hover {
+      background-color: #f4f4f9;
+      color: #6c757d;
+    }
+  </style>
+</head>
+<body>
+  <nav aria-label="Pagination">
+    <ul class="pagination">
+      <li class="disabled"><a href="#">Previous</a></li>
+      <li class="active"><a href="#">1</a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+      <li><a href="#">5</a></li>
+      <li><a href="#">Next</a></li>
+    </ul>
+  </nav>
+</body>
+</html>
